@@ -5,17 +5,17 @@ import path from "node:path";
 const parser = new Parser();
 
 const urls = [
-  ["https://news.ycombinator.com/rss", "hackerNews"],
-  ["https://feeds.arstechnica.com/arstechnica/index/", "artsTechnica"],
-  ["https://www.theverge.com/rss/index.xml", "theVerge"],
-  ["https://www.theregister.com/headlines.atom", "theRegister"],
-  ["https://finance.yahoo.com/news/rssindex", "yahooFinance"],
+  ["https://news.ycombinator.com/rss", "Hacker-News"],
+  ["https://feeds.arstechnica.com/arstechnica/index/", "Arts-Technica"],
+  ["https://www.theverge.com/rss/index.xml", "the-Verge"],
+  ["https://www.theregister.com/headlines.atom", "The-Register"],
+  ["https://finance.yahoo.com/news/rssindex", "Yahoo-Finance"],
   [
     "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10001147",
-    "cnbcBusiness",
+    "CNBC-Business",
   ],
-  ["http://rss.sciam.com/basic-science", "scientificAmerican"],
-  ["https://www.quantamagazine.org/feed/", "quantaMagazine"],
+  ["http://rss.sciam.com/basic-science", "Scientific-American"],
+  ["https://www.quantamagazine.org/feed/", "Quanta-Magazine"],
 ];
 
 async function rssToJson(url: string) {
